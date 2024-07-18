@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  color: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.bg-white {
+  background: #FFFFFF;
+}
+
+.font-color-1 {
+  color: #D1D1D1;
+}
+
+.ml-24 {
+  margin-right: 24px;
+}
+
+header {
+  padding-block: 40px;
+}
+
+header ul {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-1 .landing-area {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-1 .landing-area p {
+  font-size: 64px;
+  line-height: 1.5;
+}
+.section-1 .landing-area h1 {
+  font-size: 128px;
+  line-height: 1.5;
+  color: #00FFA3;
+  text-align: end;
+}
+.section-1 .landing-area .btn-area {
+  text-align: end;
+}
+.section-1 .landing-area .contact-btn {
+  border-radius: 32px;
+  padding: 12px 0;
+  width: 185px;
+  border: none;
+  display: inline-block;
+}
+.section-1 .landing-area .contact-btn p {
+  font-family: "Bruno Ace SC", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 4px;
+  display: inline;
+}
+
+.section-2 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  background-size: cover;
+}
