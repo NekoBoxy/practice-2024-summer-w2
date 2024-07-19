@@ -103,4 +103,11 @@ header ul {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
 
+  .introduction {
+    align-items: start;
+  }
+
+  .img-box {
+    width: 128px;
+  }
 }
