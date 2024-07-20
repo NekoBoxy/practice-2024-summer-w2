@@ -22,6 +22,36 @@ a {
   display: inline-block;
 }
 
+h1 {
+  font-size: 128px;
+  line-height: 1.5;
+}
+
+.h2 {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.fs-1 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.fs-2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.fs-3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .container {
   max-width: 1296px;
   margin: 0 auto;
@@ -45,7 +75,11 @@ a {
   color: #D1D1D1;
 }
 
-.ml-24 {
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
   margin-right: 24px;
 }
 
@@ -72,13 +106,7 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.section-1 .landing-area p {
-  font-size: 64px;
-  line-height: 1.5;
-}
 .section-1 .landing-area h1 {
-  font-size: 128px;
-  line-height: 1.5;
   color: #00FFA3;
   text-align: end;
 }
@@ -104,12 +132,11 @@ header ul {
 .section-2 {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
+  padding-top: 160px;
 }
 .section-2 .introduction {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  width: 42.44%;
 }
-.section-2 .img-box {
+.section-2 .introduction .img-box {
   width: 128px;
 }

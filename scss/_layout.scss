@@ -1,0 +1,53 @@
+// layout
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  color: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; // 要不要加?
+}
+
+h1 {
+  font-size: 128px;
+  line-height: 1.5;
+}
+
+.h2 {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+// font size 1
+.fs-1 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.fs-2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.fs-3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
