@@ -75,12 +75,20 @@ h1 {
   color: #D1D1D1;
 }
 
+.pr-16 {
+  padding-right: 16px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.p-block-160 {
+  padding-block: 160px;
 }
 
 header {
@@ -105,6 +113,7 @@ header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-block: 72px 32px;
 }
 .section-1 .landing-area h1 {
   color: #00FFA3;
@@ -132,11 +141,48 @@ header ul {
 .section-2 {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
-  padding-top: 160px;
+  padding-block: 160px;
 }
 .section-2 .introduction {
-  width: 42.44%;
+  max-width: 42.44%;
+  padding-bottom: 158px;
+  padding-right: 24px;
 }
-.section-2 .introduction .img-box {
+.section-2 .introduction .h2 {
+  margin-bottom: 36px;
+}
+.section-2 .introduction .fs-2 {
+  margin-bottom: 32px;
+}
+.section-2 .introduction .img-lights {
   width: 128px;
+}
+.section-2 .introduction .img-groups {
+  max-width: 57.5617283951%;
+}
+.section-2 .introduction .img-groups div:nth-child(1),
+.section-2 .introduction .img-groups div:nth-child(2) {
+  max-width: 0.2627345845;
+}
+.section-2 .introduction .img-groups div:nth-child(3) {
+  max-width: 0.4101876676;
+}
+
+.section-3 {
+  color: #15161D;
+}
+.section-3 .skills-box {
+  padding-top: 46px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 49.0740740741%;
+}
+.section-3 .skills-box .skill {
+  max-width: 306;
+}
+.section-3 .about {
+  max-width: 40.5864197531%;
+}
+.section-3 .about p:nth-child(1) {
+  margin-bottom: 36px;
 }

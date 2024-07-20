@@ -19,6 +19,7 @@ header ul {
 .section-1 .landing-area {
   justify-content: center;
   align-items: center;
+  padding-block: 72px 32px;
 
   // p {
   //   font-size: 64px;
@@ -33,6 +34,10 @@ header ul {
   .btn-area {
     text-align: end; // 讓 btn-area 靠右
   }
+
+  // .dialogs {
+  //   padding-block: 160px;
+  // }
 
   .contact-btn {
     border-radius: 32px;
@@ -55,14 +60,77 @@ header ul {
 .section-2 {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
-  padding-top: 160px;
+  padding-block: 160px; // Y 軸的 padding
 
   .introduction {
-    width: 42.44%;
+    // 526+24/1296 = 42.44%
+    max-width: 42.44%;
+    padding-bottom: 158px;
+    padding-right: 24px;
 
-    .img-box {
+    .h2 {
+      margin-bottom: 36px;
+    }
+
+    .fs-2 {
+      margin-bottom: 32px;
+    }
+
+    .img-lights {
       width: 128px;
+    }
+
+    // 746/1296 = 57.56%
+    .img-groups {
+      max-width: calc(746 / 1296 * 100%);
+      // 等同
+      // max-width: 57.56%;
+      // max-width: calc(746 / 1296);
+
+
+      // 196+196+306 = 698
+      // 698+24+24 = 746
+      div:nth-child(1),
+      div:nth-child(2) {
+        // max-width: 196px;
+        // 以下兩個相等，
+        max-width: calc(196 / 746);
+        // max-width: 26.27%;
+      }
+
+      div:nth-child(3) {
+        // max-width: 306px;
+        // 以下兩個相等，
+        max-width: calc(306 / 746);
+        // max-width: 41.02%;
+
+      }
+    }
+  }
+}
+
+.section-3 {
+  color: #15161D;
+
+  .skills-box {
+    padding-top: 46px;
+    flex-wrap: wrap;
+    max-width: calc(636 / 1296 * 100%);
+
+    .skill {
+      max-width: calc((636 - 24) / 2);
     }
   }
 
+  .about {
+    max-width: calc(526 / 1296 * 100%);
+    // text-align: end;
+
+    // padding-left: 134px;
+
+    // 或用 .h2 也可
+    p:nth-child(1) {
+      margin-bottom: 36px;
+    }
+  }
 }
