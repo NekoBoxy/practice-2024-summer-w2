@@ -63,8 +63,9 @@ header ul {
   padding-block: 160px; // Y 軸的 padding
 
   .introduction {
+    max-width: calc(5 / 12 * 100%);
     // 526+24/1296 = 42.44%
-    max-width: 42.44%;
+    // max-width: 42.44%;
     padding-bottom: 158px;
     padding-right: 24px;
 
@@ -82,29 +83,41 @@ header ul {
 
     // 746/1296 = 57.56%
     .img-groups {
-      max-width: calc(746 / 1296 * 100%);
+      max-width: calc(7 / 12 * 100%);
       // 等同
+      // max-width: calc(746 / 1296 * 100%);
       // max-width: 57.56%;
       // max-width: calc(746 / 1296);
 
+      // 為什麼沒在 layout 設 img { max-width: 100% } 時，.img-3 會往右側凸出?
+      // kata 設 img { max-width: 100% } 時反而圖片越來越小?
+      .img-1,
+      .img-2 {
+        max-width: calc(2 / 7 * 100%);
+      }
+
+      .img-3 {
+        max-width: calc(3 / 7 * 100%);
+      }
 
       // 196+196+306 = 698
       // 698+24+24 = 746
-      div:nth-child(1),
-      div:nth-child(2) {
-        // max-width: 196px;
-        // 以下兩個相等，
-        max-width: calc(196 / 746);
-        // max-width: 26.27%;
-      }
+      // div:nth-child(1),
+      // div:nth-child(2) {
+      // max-width: calc(2 / 7 * 100%);
+      // 等同
+      // max-width: 196px;
+      // max-width: calc(196 / 746 * 100%);
+      // max-width: 26.27%;
+      // }
 
-      div:nth-child(3) {
-        // max-width: 306px;
-        // 以下兩個相等，
-        max-width: calc(306 / 746);
-        // max-width: 41.02%;
-
-      }
+      // div:nth-child(3) {
+      // max-width: calc(3 / 7 * 100%);
+      // 等同
+      // max-width: 306px;
+      // max-width: calc(306 / 746 * 100%);
+      // max-width: 41.02%;
+      // }
     }
   }
 }
@@ -115,18 +128,18 @@ header ul {
   .skills-box {
     padding-top: 46px;
     flex-wrap: wrap;
-    max-width: calc(636 / 1296 * 100%);
+    max-width: calc(7 / 12 * 100%);
+    // max-width: calc(636 / 1296 * 100%);
+    margin-right: 110px;
 
     .skill {
-      max-width: calc((636 - 24) / 2);
+      max-width: calc(50% - 24px);
     }
   }
 
   .about {
-    max-width: calc(526 / 1296 * 100%);
-    // text-align: end;
-
-    // padding-left: 134px;
+    max-width: calc(5 / 12 * 100%);
+    // max-width: calc(526 / 1296 * 100%);
 
     // 或用 .h2 也可
     p:nth-child(1) {

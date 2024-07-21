@@ -12,6 +12,7 @@ body {
 }
 
 img {
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -79,6 +80,10 @@ h1 {
   padding-right: 16px;
 }
 
+.pr-24 {
+  padding-right: 24px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
@@ -144,7 +149,7 @@ header ul {
   padding-block: 160px;
 }
 .section-2 .introduction {
-  max-width: 42.44%;
+  max-width: 41.6666666667%;
   padding-bottom: 158px;
   padding-right: 24px;
 }
@@ -158,14 +163,14 @@ header ul {
   width: 128px;
 }
 .section-2 .introduction .img-groups {
-  max-width: 57.5617283951%;
+  max-width: 58.3333333333%;
 }
-.section-2 .introduction .img-groups div:nth-child(1),
-.section-2 .introduction .img-groups div:nth-child(2) {
-  max-width: 0.2627345845;
+.section-2 .introduction .img-groups .img-1,
+.section-2 .introduction .img-groups .img-2 {
+  max-width: 28.5714285714%;
 }
-.section-2 .introduction .img-groups div:nth-child(3) {
-  max-width: 0.4101876676;
+.section-2 .introduction .img-groups .img-3 {
+  max-width: 42.8571428571%;
 }
 
 .section-3 {
@@ -175,13 +180,14 @@ header ul {
   padding-top: 46px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 49.0740740741%;
+  max-width: 58.3333333333%;
+  margin-right: 110px;
 }
 .section-3 .skills-box .skill {
-  max-width: 306;
+  max-width: calc(50% - 24px);
 }
 .section-3 .about {
-  max-width: 40.5864197531%;
+  max-width: 41.6666666667%;
 }
 .section-3 .about p:nth-child(1) {
   margin-bottom: 36px;
