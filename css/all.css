@@ -114,7 +114,7 @@ header ul {
           align-items: center;
 }
 
-.landing .landing-area {
+.landing .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -123,21 +123,21 @@ header ul {
           align-items: center;
   padding-block: 72px 32px;
 }
-.landing .landing-area h1 {
+.landing .container h1 {
   color: #00FFA3;
   text-align: end;
 }
-.landing .landing-area .btn-area {
+.landing .container .btn-area {
   text-align: end;
 }
-.landing .landing-area .contact-btn {
+.landing .container .contact-btn {
   border-radius: 32px;
   padding: 12px 0;
   width: 185px;
   border: none;
   display: inline-block;
 }
-.landing .landing-area .contact-btn p {
+.landing .container .contact-btn p {
   font-family: "Bruno Ace SC", sans-serif;
   color: #000000;
   font-size: 16px;
@@ -149,7 +149,6 @@ header ul {
 .introduction {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
-  padding-block: 160px;
   -webkit-backdrop-filter: opacity(30%);
           backdrop-filter: opacity(30%);
 }
@@ -211,12 +210,12 @@ header ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact .contact-dialog {
+.contact .dialog {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.contact .contact-dialog .h2 {
+.contact .dialog .h2 {
   padding-block: 31px;
   text-align: center;
 }
