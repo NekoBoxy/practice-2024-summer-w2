@@ -88,6 +88,10 @@ h1 {
   margin-right: 16px;
 }
 
+.mr-20 {
+  margin-right: 20px;
+}
+
 .mr-24 {
   margin-right: 24px;
 }
@@ -191,4 +195,19 @@ header ul {
 }
 .section-3 .about p:nth-child(1) {
   margin-bottom: 36px;
+}
+
+.section-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#050014), to(rgba(1, 2, 30, 0.8901960784)));
+  background: linear-gradient(#050014, rgba(1, 2, 30, 0.8901960784));
+}
+.section-4 .container {
+  padding-block: 96px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-4 .h2 {
+  padding-block: 31px;
+  text-align: center;
 }

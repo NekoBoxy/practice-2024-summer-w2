@@ -149,5 +149,16 @@ header ul {
 }
 
 .section-4 {
-  // background-color: color(l red green blue);
+  background: linear-gradient(#050014, #01021EE3);
+
+  .container {
+    padding-block: 96px;
+    justify-content: space-between;
+  }
+
+
+  .h2 {
+    padding-block: 31px;
+    text-align: center;
+  }
 }
