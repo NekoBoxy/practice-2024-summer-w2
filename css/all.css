@@ -12,7 +12,6 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -115,7 +114,7 @@ header ul {
           align-items: center;
 }
 
-.section-1 .landing-area {
+.landing .landing-area {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -124,21 +123,21 @@ header ul {
           align-items: center;
   padding-block: 72px 32px;
 }
-.section-1 .landing-area h1 {
+.landing .landing-area h1 {
   color: #00FFA3;
   text-align: end;
 }
-.section-1 .landing-area .btn-area {
+.landing .landing-area .btn-area {
   text-align: end;
 }
-.section-1 .landing-area .contact-btn {
+.landing .landing-area .contact-btn {
   border-radius: 32px;
   padding: 12px 0;
   width: 185px;
   border: none;
   display: inline-block;
 }
-.section-1 .landing-area .contact-btn p {
+.landing .landing-area .contact-btn p {
   font-family: "Bruno Ace SC", sans-serif;
   color: #000000;
   font-size: 16px;
@@ -147,67 +146,137 @@ header ul {
   display: inline;
 }
 
-.section-2 {
+.introduction {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
   padding-block: 160px;
+  -webkit-backdrop-filter: opacity(30%);
+          backdrop-filter: opacity(30%);
 }
-.section-2 .introduction {
+.introduction img {
+  max-width: 100%;
+}
+.introduction .dialog {
   max-width: 41.6666666667%;
   padding-bottom: 158px;
   padding-right: 24px;
 }
-.section-2 .introduction .h2 {
+.introduction .dialog .h2 {
   margin-bottom: 36px;
 }
-.section-2 .introduction .fs-2 {
+.introduction .dialog .fs-2 {
   margin-bottom: 32px;
 }
-.section-2 .introduction .img-lights {
+.introduction .dialog .img-lights {
   width: 128px;
 }
-.section-2 .introduction .img-groups {
+.introduction .dialog .img-groups {
   max-width: 58.3333333333%;
 }
-.section-2 .introduction .img-groups .img-1,
-.section-2 .introduction .img-groups .img-2 {
+.introduction .dialog .img-groups .img-1,
+.introduction .dialog .img-groups .img-2 {
   max-width: 28.5714285714%;
 }
-.section-2 .introduction .img-groups .img-3 {
+.introduction .dialog .img-groups .img-3 {
   max-width: 42.8571428571%;
 }
 
-.section-3 {
+.about {
   color: #15161D;
 }
-.section-3 .skills-box {
+.about .skills-box {
   padding-top: 46px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 58.3333333333%;
   margin-right: 110px;
 }
-.section-3 .skills-box .skill {
+.about .skills-box .skill {
   max-width: calc(50% - 24px);
 }
-.section-3 .about {
+.about .about-dialog {
   max-width: 41.6666666667%;
 }
-.section-3 .about p:nth-child(1) {
+.about .about-dialog p:nth-child(1) {
   margin-bottom: 36px;
 }
 
-.section-4 {
+.contact {
   background: -webkit-gradient(linear, left top, left bottom, from(#050014), to(rgba(1, 2, 30, 0.8901960784)));
   background: linear-gradient(#050014, rgba(1, 2, 30, 0.8901960784));
 }
-.section-4 .container {
+.contact .container {
   padding-block: 96px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.section-4 .h2 {
+.contact .contact-dialog {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact-dialog .h2 {
   padding-block: 31px;
   text-align: center;
+}
+
+.project {
+  color: #000000;
+}
+.project .container {
+  padding-top: 160px;
+}
+.project .h2 {
+  text-align: end;
+  margin-bottom: 16px;
+}
+.project .box .left {
+  max-width: 33.3333333333%;
+}
+.project .box .right {
+  max-width: 66.6666666667%;
+}
+.project .box .top {
+  margin-bottom: 28px;
+}
+.project .box .top,
+.project .box .bottom {
+  width: 100%;
+}
+.project .dialog {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.project .more-btn {
+  border-radius: 32px;
+  padding: 12px 0;
+  width: 185px;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
+.project .more-btn p {
+  font-family: "Bruno Ace SC", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 4px;
+  display: inline;
+}
+
+footer .container p {
+  color: #ffffff;
+  text-align: center;
+  padding-block: 40px;
 }

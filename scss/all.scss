@@ -16,7 +16,7 @@ header ul {
   align-items: center;
 }
 
-.section-1 .landing-area {
+.landing .landing-area {
   justify-content: center;
   align-items: center;
   padding-block: 72px 32px;
@@ -57,12 +57,19 @@ header ul {
   }
 }
 
-.section-2 {
+.introduction {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-size: cover;
   padding-block: 160px; // Y 軸的 padding
+  // position: relative;
+  // z-index: -1;
+  backdrop-filter: opacity(30%);
 
-  .introduction {
+  img {
+    max-width: 100%;
+  }
+
+  .dialog {
     max-width: calc(5 / 12 * 100%);
     // 526+24/1296 = 42.44%
     // max-width: 42.44%;
@@ -122,7 +129,7 @@ header ul {
   }
 }
 
-.section-3 {
+.about {
   color: #15161D;
 
   .skills-box {
@@ -137,7 +144,7 @@ header ul {
     }
   }
 
-  .about {
+  .about-dialog {
     max-width: calc(5 / 12 * 100%);
     // max-width: calc(526 / 1296 * 100%);
 
@@ -148,7 +155,7 @@ header ul {
   }
 }
 
-.section-4 {
+.contact {
   background: linear-gradient(#050014, #01021EE3);
 
   .container {
@@ -156,9 +163,72 @@ header ul {
     justify-content: space-between;
   }
 
+  .contact-dialog {
+    align-items: center;
+
+    .h2 {
+      padding-block: 31px;
+      text-align: center;
+    }
+  }
+}
+
+.project {
+  color: #000000;
+
+  .container {
+    padding-top: 160px;
+  }
 
   .h2 {
-    padding-block: 31px;
-    text-align: center;
+    text-align: end;
+    margin-bottom: 16px;
   }
+
+  .box .left {
+    max-width: calc(4 / 12 * 100%);
+  }
+
+  .box .right {
+    max-width: calc(8 / 12 * 100%);
+  }
+
+  .box .top {
+    margin-bottom: 28px;
+  }
+
+  .box .top,
+  .box .bottom {
+    width: 100%;
+  }
+
+  .dialog {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .more-btn {
+    border-radius: 32px;
+    padding: 12px 0;
+    width: 185px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+
+    p {
+      font-family: "Bruno Ace SC", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-right: 4px;
+      display: inline;
+    }
+  }
+}
+
+footer .container p {
+  color: #ffffff;
+  text-align: center;
+  padding-block: 40px;
 }
